@@ -1,4 +1,4 @@
-import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text } from "@chakra-ui/react";
+import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, Select } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -24,7 +24,15 @@ const Login = () => {
           <FormLabel>Password</FormLabel>
           <Input type="password" />
         </FormControl>
-        <Button colorScheme="blue" onClick={handleLogin}>
+        <FormControl id="role">
+          <FormLabel>Role</FormLabel>
+          <Select placeholder="Select role">
+            <option value="owner">货主</option>
+            <option value="company">运输公司</option>
+            <option value="driver">司机</option>
+          </Select>
+        </FormControl>
+        <Button colorScheme="blue" onClick={handleLogin} mt={4}>
           Login
         </Button>
       </VStack>

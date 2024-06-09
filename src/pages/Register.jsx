@@ -1,4 +1,4 @@
-import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, Checkbox, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter } from "@chakra-ui/react";
+import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, Checkbox, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, Select } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -33,6 +33,14 @@ const Register = () => {
           </FormControl>
           <FormControl id="privacy">
             <Checkbox>Agree to Privacy Policy</Checkbox>
+          </FormControl>
+          <FormControl id="role">
+            <FormLabel>Role</FormLabel>
+            <Select placeholder="Select role">
+              <option value="owner">货主</option>
+              <option value="company">运输公司</option>
+              <option value="driver">司机</option>
+            </Select>
           </FormControl>
           <Button colorScheme="blue" onClick={handleRegister} mt={4}>
             Register

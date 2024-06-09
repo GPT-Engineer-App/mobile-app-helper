@@ -23,10 +23,7 @@ const Index = () => {
           <IconButton aria-label="Home" icon={<FaHome />} size="lg" variant="ghost" />
           <Text fontSize="sm">Home</Text>
         </Box>
-        <Box textAlign="center">
-          <IconButton aria-label="Search" icon={<FaSearch />} size="lg" variant="ghost" />
-          <Text fontSize="sm">Search</Text>
-        </Box>
+
         <Box textAlign="center">
           <IconButton aria-label="Add" icon={<FaPlusSquare />} size="lg" variant="ghost" />
           <Text fontSize="sm">Add</Text>

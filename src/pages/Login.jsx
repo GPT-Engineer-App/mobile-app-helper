@@ -1,11 +1,19 @@
-import { Box, Button, Container, FormControl, FormLabel, Input, VStack, Text, Select } from "@chakra-ui/react";
+import { Box, Button, Container, VStack, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    navigate("/");
+  const handleOwnerLogin = () => {
+    navigate("/login/owner");
+  };
+
+  const handleDriverLogin = () => {
+    navigate("/login/driver");
+  };
+
+  const handleCompanyLogin = () => {
+    navigate("/login/company");
   };
 
   return (
@@ -15,25 +23,15 @@ const Login = () => {
           Login
         </Text>
       </Box>
-      <VStack spacing={4} p={4}>
-        <FormControl id="email">
-          <FormLabel>Email address</FormLabel>
-          <Input type="email" />
-        </FormControl>
-        <FormControl id="password">
-          <FormLabel>Password</FormLabel>
-          <Input type="password" />
-        </FormControl>
-        <FormControl id="role">
-          <FormLabel>Role</FormLabel>
-          <Select placeholder="Select role">
-            <option value="owner">货主</option>
-            <option value="company">运输公司</option>
-            <option value="driver">司机</option>
-          </Select>
-        </FormControl>
-        <Button colorScheme="blue" onClick={handleLogin} mt={4}>
-          Login
+      <VStack spacing={4} p={4} align="stretch">
+        <Button colorScheme="blue" onClick={handleOwnerLogin}>
+          货主登录
+        </Button>
+        <Button colorScheme="green" onClick={handleDriverLogin}>
+          司机登录
+        </Button>
+        <Button colorScheme="teal" onClick={handleCompanyLogin}>
+          运输公司登录
         </Button>
       </VStack>
     </Container>

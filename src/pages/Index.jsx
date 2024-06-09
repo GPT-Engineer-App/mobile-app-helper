@@ -21,11 +21,26 @@ const Index = () => {
 
       {/* Bottom Navigation */}
       <HStack bg="gray.100" p={2} justifyContent="space-around">
-        <IconButton aria-label="Home" icon={<FaHome />} size="lg" variant="ghost" />
-        <IconButton aria-label="Search" icon={<FaSearch />} size="lg" variant="ghost" />
-        <IconButton aria-label="Add" icon={<FaPlusSquare />} size="lg" variant="ghost" />
-        <IconButton aria-label="Notifications" icon={<FaBell />} size="lg" variant="ghost" />
-        <IconButton aria-label="Profile" icon={<FaUser />} size="lg" variant="ghost" />
+        <Box textAlign="center">
+          <IconButton aria-label="Home" icon={<FaHome />} size="lg" variant="ghost" />
+          <Text fontSize="sm">Home</Text>
+        </Box>
+        <Box textAlign="center">
+          <IconButton aria-label="Search" icon={<FaSearch />} size="lg" variant="ghost" />
+          <Text fontSize="sm">Search</Text>
+        </Box>
+        <Box textAlign="center">
+          <IconButton aria-label="Add" icon={<FaPlusSquare />} size="lg" variant="ghost" />
+          <Text fontSize="sm">Add</Text>
+        </Box>
+        <Box textAlign="center">
+          <IconButton aria-label="Notifications" icon={<FaBell />} size="lg" variant="ghost" />
+          <Text fontSize="sm">Notifications</Text>
+        </Box>
+        <Box textAlign="center">
+          <IconButton aria-label="Profile" icon={<FaUser />} size="lg" variant="ghost" />
+          <Text fontSize="sm">Profile</Text>
+        </Box>
       </HStack>
     </Container>
   );

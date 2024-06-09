@@ -20,29 +20,12 @@ const Index = () => {
 
       <HStack bg="gray.100" p={2} justifyContent="space-around">
         <Box textAlign="center">
-          <IconButton aria-label="Home" icon={<FaHome />} size="lg" variant="ghost" />
-          <Text fontSize="sm">Home</Text>
-        </Box>
-
-        <Box textAlign="center">
-          <IconButton aria-label="Add" icon={<FaPlusSquare />} size="lg" variant="ghost" />
-          <Text fontSize="sm">Add</Text>
+          <IconButton aria-label="Ship" icon={<FaPlusSquare />} size="lg" variant="ghost" />
+          <Text fontSize="sm">发货</Text>
         </Box>
         <Box textAlign="center">
-          <IconButton aria-label="Notifications" icon={<FaBell />} size="lg" variant="ghost" />
-          <Text fontSize="sm">Notifications</Text>
-        </Box>
-        <Box textAlign="center">
-          <Link to="/login">
-            <IconButton aria-label="Profile" icon={<FaUser />} size="lg" variant="ghost" />
-            <Text fontSize="sm">Login</Text>
-          </Link>
-        </Box>
-        <Box textAlign="center">
-          <Link to="/register">
-            <IconButton aria-label="Profile" icon={<FaUser />} size="lg" variant="ghost" />
-            <Text fontSize="sm">Register</Text>
-          </Link>
+          <IconButton aria-label="My" icon={<FaUser />} size="lg" variant="ghost" />
+          <Text fontSize="sm">我的</Text>
         </Box>
       </HStack>
     </Container>

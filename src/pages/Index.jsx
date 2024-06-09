@@ -7,14 +7,14 @@ const Index = () => {
       {/* Header */}
       <Box bg="blue.500" color="white" p={4} textAlign="center">
         <Text fontSize="xl" fontWeight="bold">
-          My Mobile App
+          Logistics App
         </Text>
       </Box>
 
-      {/* Main Content */}
+      {}
       <VStack flex={1} p={4} spacing={4} overflowY="auto">
-        <Text fontSize="lg">Welcome to the mobile app interface!</Text>
-        <Text>This is a simple example of a mobile app layout using React and Chakra UI.</Text>
+        <Text fontSize="lg">Welcome to the logistics app interface!</Text>
+        <Text>This app helps you manage and track your logistics operations efficiently.</Text>
         <Spacer />
         <Text>Feel free to customize this layout to fit your needs.</Text>
       </VStack>

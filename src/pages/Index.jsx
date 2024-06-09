@@ -27,6 +27,14 @@ const Index = () => {
           <IconButton aria-label="My" icon={<FaUser />} size="lg" variant="ghost" />
           <Text fontSize="sm">我的</Text>
         </Box>
+        <Box textAlign="center">
+          <IconButton aria-label="Orders" icon={<FaBell />} size="lg" variant="ghost" />
+          <Text fontSize="sm">订单</Text>
+        </Box>
+        <Box textAlign="center">
+          <IconButton aria-label="Services" icon={<FaSearch />} size="lg" variant="ghost" />
+          <Text fontSize="sm">服务</Text>
+        </Box>
       </HStack>
     </Container>
   );
